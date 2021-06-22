@@ -1,4 +1,19 @@
 import { App, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { createApp, defineComponent, h } from 'vue'
+
+const VueApp = defineComponent({
+	render() {
+    return h(
+      'h1', // tag name
+      {
+				id: 'custom-h1'
+			}, // props/attributes
+    )
+  },
+	mounted() {
+		console.log('Component was successfully mounted!')
+	}
+})
 
 interface MyPluginSettings {
 	mySetting: string;
@@ -51,6 +66,12 @@ export default class MyPlugin extends Plugin {
 		});
 
 		this.registerInterval(window.setInterval(() => console.log('setInterval'), 5 * 60 * 1000));
+
+		this.mount()
+	}
+
+	mount() {
+		createApp(VueApp).mount(document.body.createDiv())
 	}
 
 	onunload() {
