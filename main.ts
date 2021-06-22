@@ -1,6 +1,8 @@
 import { App, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
 import { createApp, defineComponent, h } from 'vue'
 
+import './global-styles.css'
+
 const VueApp = defineComponent({
 	render() {
     return h(
