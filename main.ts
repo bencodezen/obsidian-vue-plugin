@@ -1,21 +1,8 @@
 import { App, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
 import { createApp, defineComponent, h } from 'vue'
+import Counter from './components/Counter.vue'
 
 import './global-styles.css'
-
-const VueApp = defineComponent({
-	render() {
-    return h(
-      'h1', // tag name
-      {
-				id: 'custom-h1'
-			}, // props/attributes
-    )
-  },
-	mounted() {
-		console.log('Component was successfully mounted!')
-	}
-})
 
 interface MyPluginSettings {
 	mySetting: string;
@@ -73,7 +60,7 @@ export default class MyPlugin extends Plugin {
 	}
 
 	mount() {
-		createApp(VueApp).mount(document.body.createDiv())
+		createApp(Counter).mount(document.body.createDiv())
 	}
 
 	onunload() {
