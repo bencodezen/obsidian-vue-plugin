@@ -1,4 +1,9 @@
-/* Sets all the text color to red! */
+
 body {
-    color: red;
+  background-color: white;
+  color: black;
+}
+.counter {
+  color: white;
+  background-color: black;
 }

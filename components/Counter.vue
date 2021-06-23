@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-	<div class="counter">
+  <div class="counter">
     <h1>Counter</h1>
     <p>Count: {{ count }}</p>
     <button @click="incrementCount">Increment</button>
@@ -22,5 +22,6 @@ export default {
 <style>
 .counter {
   color: white;
+  background-color: black;
 }
 </style>
