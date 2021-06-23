@@ -4,11 +4,6 @@ import vuePlugin from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vuePlugin()],
-  resolve: {
-    alias: {
-      'obsidian': '/obsidian-shim.js'
-    }
-  },
   build: {
     minify: false,
     // Use Vite lib mode https://vitejs.dev/guide/build.html#library-mode
