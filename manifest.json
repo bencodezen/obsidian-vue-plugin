@@ -1,10 +1,10 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.1",
+	"id": "obsidian-vue-plugin",
+	"name": "A Vue Plugin",
+	"version": "0.1.0",
 	"minAppVersion": "0.9.12",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md/about",
+	"description": "This is a sample Vue plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API with Vue 3.",
+	"author": "Ben Hong <ben@bencodezen.io>",
+	"authorUrl": "https://www.bencodezen.io",
 	"isDesktopOnly": false
 }
