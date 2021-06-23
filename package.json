@@ -6,7 +6,7 @@
   "scripts": {
     "rollup-dev": "rollup --config rollup.config.js -w",
     "rollup-build": "rollup --config rollup.config.js --environment BUILD:production",
-    "dev": "vite",
+    "dev": "vite build --watch",
     "build": "vite build"
   },
   "keywords": [],
