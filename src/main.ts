@@ -68,7 +68,7 @@ export default class MyPlugin extends Plugin {
 
   mount() {
     createApp(App, {
-      app: ObsidianApp
+      app: this.app
     }).mount(document.body.createDiv())
   }
 
