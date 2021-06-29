@@ -1,5 +1,11 @@
 <script>
 export default {
+  props: {
+    app: {
+      type: Object,
+      required: true
+    }
+  },
   data: () => ({
     count: 0
   }),
@@ -7,6 +13,9 @@ export default {
     incrementCount() {
       this.count++
     }
+  },
+  mounted() {
+    console.log({ app })
   }
 }
 </script>
@@ -14,6 +23,7 @@ export default {
 <template>
   <div class="counter">
     <h1>Counter</h1>
+    <p>App: {{ app }} test</p>
     <p>Count: {{ count }}</p>
     <button @click="incrementCount">Increment</button>
   </div>
@@ -22,6 +32,6 @@ export default {
 <style>
 .counter {
   color: white;
-  background-color: black;
+  background-color: red;
 }
 </style>
