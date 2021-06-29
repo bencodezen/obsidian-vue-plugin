@@ -1,6 +1,6 @@
 import { App, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian'
 import { createApp } from 'vue'
-import Counter from './components/Counter.vue'
+import VueApp from './VueApp.vue'
 
 interface MyPluginSettings {
   mySetting: string
@@ -60,7 +60,7 @@ export default class MyPlugin extends Plugin {
   }
 
   mount() {
-    createApp(Counter, {
+    createApp(VueApp, {
       app: App
     }).mount(document.body.createDiv())
   }

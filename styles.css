@@ -1,9 +1,6 @@
 
-body {
-  background-color: white;
-  color: black;
-}
 .counter {
   color: white;
-  background-color: black;
+  background-color: red;
+  border: 2px solid #bada55;
 }

@@ -33,5 +33,6 @@ export default {
 .counter {
   color: white;
   background-color: red;
+  border: 2px solid #bada55;
 }
 </style>

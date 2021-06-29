@@ -8,16 +8,16 @@ export default defineConfig({
     minify: false,
     // Use Vite lib mode https://vitejs.dev/guide/build.html#library-mode
     lib: {
-      entry: path.resolve(__dirname, 'main.ts'),
-      formats: ['cjs'],
+      entry: path.resolve(__dirname, './src/main.ts'),
+      formats: ['cjs']
     },
     rollupOptions: {
       output: {
         // Overwrite default Vite output fileName
         entryFileNames: 'main.js',
-        assetFileNames: 'styles.css',
+        assetFileNames: 'styles.css'
       },
-      external: ['obsidian'],
+      external: ['obsidian']
     },
     // Use root as the output dir
     emptyOutDir: false,
