@@ -1,6 +1,13 @@
-import { App, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian'
+import {
+  App as ObsidianApp,
+  Modal,
+  Notice,
+  Plugin,
+  PluginSettingTab,
+  Setting
+} from 'obsidian'
 import { createApp } from 'vue'
-import VueApp from './VueApp.vue'
+import App from './App.vue'
 
 interface MyPluginSettings {
   mySetting: string
@@ -60,8 +67,8 @@ export default class MyPlugin extends Plugin {
   }
 
   mount() {
-    createApp(VueApp, {
-      app: App
+    createApp(App, {
+      app: ObsidianApp
     }).mount(document.body.createDiv())
   }
 
